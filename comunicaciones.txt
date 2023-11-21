@@ -1,0 +1,4 @@
+Usuario: if0_35418917
+Passsword: 7ECwvkOVAW
+FTPhostname: ftpupload.net	
+FTP port: 21 
