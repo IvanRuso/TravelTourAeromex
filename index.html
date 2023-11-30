@@ -6,51 +6,55 @@
     <title>Atravel Tour Aeromex</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambié la fuente */
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-image: url('medias/background0.jpg');
+            background-size: cover;
+            background-position: center;
             display: flex;
             flex-wrap: wrap;
             min-height: 100vh;
+            color: #333; /* Cambié el color del texto a un gris oscuro */
         }
-
         header {
-            background-color: #333;
+            background-color: rgba(0, 100, 0, 0.8); /* Cambié el color de fondo a un verde oscuro semi-transparente */
             color: #fff;
             text-align: center;
             padding: 1em;
             position: relative;
             flex: 1 100%;
         }
-
         header img {
             position: absolute;
             top: 10px;
             left: 10px;
             height: 100px;
         }
-
         nav {
-            background-color: #444;
+            background-color: rgba(34, 139, 34, 0.8); /* Cambié el color de fondo a un verde bosque semi-transparente */
             color: #fff;
             text-align: center;
             padding: 0.5em;
             flex: 1 100%;
         }
-
         nav a {
             color: #fff;
             text-decoration: none;
             padding: 1em;
             margin: 0 0.5em;
         }
-
         section {
             padding: 20px;
             flex: 1 70%;
+            color: #fff;; /* Cambié el color del texto a un gris medio */
         }
-
+        h2, h1 {
+                color: #006400; /* Cambié el color de los encabezados a un verde oscuro */
+        }
+            ul, p {
+                color:  #fff;; /* Cambié el color de las listas y los párrafos a un gris medio */
+        }
         #primer-video {
             flex: 1 20%;
             padding: 20px;
@@ -60,28 +64,38 @@
             flex-direction: column;
             align-items: center;
         }
-
         video {
             width: 100%;
             height: auto;
             margin-bottom: 10px;
         }
-
         #primer-video video {
             width: 90%;
             height: auto;
             margin-bottom: 10px;
         }
-
         #segundo-video video,
         #tercer-video video {
             width: 80%;
             height: auto;
             margin-bottom: 10px;
         }
-
+        .videos-container {
+            flex: 1 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .video-container {
+            width: 80%;
+            box-sizing: border-box;
+            padding: 20px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         footer {
-            background-color: #333;
+            background-color: rgba(0, 100, 0, 0.8);
             color: #fff;
             text-align: center;
             padding: 1em;
@@ -93,22 +107,25 @@
 
     <header>
         <img src="Logo.jpeg" alt="Logo de la Agencia" style="height: 100px;" />
-        <h1>Atravel Tour Aeromex</h1>
+        <h1 style="color: #fff;">Atravel Tour Aeromex</h1>
     </header>
 
     <nav>
         <a href="#destinos">Destinos</a>
+        <a href="#actividades">Actividades</a>
         <a href="#paquetes">Paquetes</a>
         <a href="#contacto">Contacto</a>
     </nav>
 
-    <section id="destinos">
+    <section id="destinos" style="color: #fff;">
         <h2>Destinos Populares</h2>
-        <p>Explora nuestros destinos emocionantes y descubre nuevas aventuras.</p>
+        <p>Descubre la belleza de México con nuestros emocionantes destinos:</p>
         <ul>
-            <li>Playas exóticas</li>
-            <li>Montañas majestuosas</li>
-            <li>Ciudades vibrantes</li>
+            <li>Pirámides</li>
+            <li>Pueblos Mágicos</li>
+            <li>Templos Antiguos</li>
+            <li>Baños</li>
+            <li>Restaurantes</li>
         </ul>
     </section>
 
@@ -119,41 +136,48 @@
         </video>
     </div>
 
-    <section id="paquetes">
-        <h2>Paquetes de Viaje</h2>
-        <p>Descubre nuestras ofertas de paquetes de viaje a destinos increíbles.</p>
+    <section id="actividades" style="color: #fff;">
+        <h2>Actividades</h2>
+        <p>Disfruta de emocionantes actividades en tus destinos:</p>
         <ul>
-            <li>Paquete A - Playa y Sol</li>
-            <li>Paquete B - Aventura en la Montaña</li>
-            <li>Paquete C - Exploración Urbana</li>
+            <li>Visitas Guiadas</li>
+            <li>Tour en Racer</li>
+            <li>Tour en Cuatrimoto</li>
+            <li>Vuelo en Globo</li>
+            <li>Cabalgatas</li>
+            <li>Visitas a Baños y Restaurantes</li>
         </ul>
     </section>
 
-    <div class="video-container" id="segundo-video">
-        <video controls>
-            <source src="medias/Vid2A.mp4" type="video/mp4">
-            Tu navegador no soporta el tag de video.
-        </video>
-    </div>
+    <section id="videos">
+        <div class="videos-container">
+            <div class="video-container" id="segundo-video">
+                <video controls>
+                    <source src="medias/Vid2A.mp4" type="video/mp4">
+                    Tu navegador no soporta el tag de video.
+                </video>
+            </div>
 
-    <div class="video-container" id="tercer-video">
-        <video controls>
-            <source src="medias/Vid3A.mp4" type="video/mp4">
-            Tu navegador no soporta el tag de video.
-        </video>
-    </div>
+            <div class="video-container" id="tercer-video">
+                <video controls>
+                    <source src="medias/Vid3A.mp4" type="video/mp4">
+                    Tu navegador no soporta el tag de video.
+                </video>
+            </div>
+        </div>
+    </section>
 
-    <section id="contacto">
+    <section id="contacto" style="color: #fff;">
         <h2>Contacto</h2>
         <p>¡Contáctanos para planificar tu próxima aventura!</p>
-        <p>Email: info@agenciadeviajes.com</p>
+        <p>Email: <a href="mailto:traveltouraeromex1990@gmail.com" style="color: #fff;">traveltouraeromex1990@gmail.com</a></p>
         <p>Teléfono: +52 56 1185 9548</p>
         <p>Teléfono: +52 56 3917 8397</p>
         <p>Teléfono: +52 55 7486 7001</p>
     </section>
 
     <footer>
-        <p>&copy; 2023 Travel Tour Aeromex</p>
+        <p style="color: #fff;">&copy; 2023 Travel Tour Aeromex</p>
     </footer>
 
 </body>

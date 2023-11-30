@@ -1,0 +1,12 @@
+        #primer-video video {
+            width: 90%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        #segundo-video video,
+        #tercer-video video {
+            width: 80%;
+            height: auto;
+            margin-bottom: 10px;
+        }
