@@ -1,25 +1,17 @@
+PAGINA EN MODO SHOOTDOWN-"Se usa cuando se quiera dar un shootdown temporal.
+
+
+
+/*
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TraveTourAeromex</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        section {
-            text-align: center;
-        }
-    </style>
 </head>
 <script>
-    alert("Pagina Fuera de Servicio")
+    alert ("Pagina Fuera de Servicio")
 </script>
 <body>
     <div>
@@ -30,3 +22,4 @@
     </div>
 </body>
 </html>
+*/
